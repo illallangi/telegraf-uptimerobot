@@ -5,7 +5,9 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONIOENCODING=UTF-8 \
     LC_ALL=en_US.UTF-8 \
     LANG=en_US.UTF-8 \
-    XDG_CONFIG_HOME=/config
+    XDG_CONFIG_HOME=/config \
+    TELEGRAF_INTERVAL=300 \
+    INFLUXDB_DATABASE=uptimerobot
 
 RUN curl -s https://repos.influxdata.com/influxdb.key | apt-key add -
 RUN echo "deb https://repos.influxdata.com/debian buster stable" > /etc/apt/sources.list.d/influxdb.list
