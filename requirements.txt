@@ -1,0 +1,4 @@
+click
+requests
+telegraf_pyplug
+yarl
