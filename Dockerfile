@@ -1,4 +1,4 @@
-FROM ghcr.io/illallangi/telegraf:v0.0.13
+FROM ghcr.io/illallangi/telegraf:v0.0.14
 ENV INFLUXDB_DATABASE=uptimerobot
 
 COPY ./requirements.txt /usr/src/app/requirements.txt
